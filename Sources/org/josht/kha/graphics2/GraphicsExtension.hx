@@ -12,10 +12,24 @@ import earcut.Earcut;
 import kha.math.Vector2;
 import kha.graphics2.Graphics;
 
+/**
+	Adds a `fillComplexPolygon()` method to `kha.graphics2.Graphics`.
+
+	```haxe
+	using org.josht.kha.graphics2.GraphicsExtension;
+	```
+
+	```haxe
+	g2.fillComplexPolygon(x, y, vertices);
+	```
+**/
 class GraphicsExtension {
 	private static var data:Array<Float> = [];
 	private static var triangles:Array<Int> = [];
 
+	/**
+		Draws a filled polygon that is not required to be convex.
+	**/
 	public static function fillComplexPolygon(g2:Graphics, x:Float, y:Float, vertices:Array<Vector2>):Void {
 		data.resize(0);
 		for (vertex in vertices) {
