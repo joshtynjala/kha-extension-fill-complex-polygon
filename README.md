@@ -26,10 +26,10 @@ var innerRadius = 38.0;
 var startOffset = -Math.PI / 2.0;
 var angle = Math.PI / points;
 for (i in 0...(2 * points + 1)) {
-	var radius = i % 2 == 0 ? outerRadius : innerRadius;
-	var x = Math.cos(startOffset + angle * i) * radius;
-	var y = Math.sin(startOffset + angle * i) * radius;
-	vertices.push(new Vector2(outerRadius + x, outerRadius + y));
+  var radius = i % 2 == 0 ? outerRadius : innerRadius;
+  var x = Math.cos(startOffset + angle * i) * radius;
+  var y = Math.sin(startOffset + angle * i) * radius;
+  vertices.push(new Vector2(outerRadius + x, outerRadius + y));
 }
 g2.color = Red;
 g2.fillComplexPolygon(20.0, 20.0, vertices);
