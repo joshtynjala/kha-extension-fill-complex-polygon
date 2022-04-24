@@ -1,0 +1,16 @@
+{
+	"name": "kha-extension-fill-complex-polygon",
+	"url": "https://josht.org/",
+	"license": "MIT",
+	"tags": [
+		"kha"
+	],
+	"description": "Similar to GraphicsExtension.fillPolygon(), but can fill polygons that are not convex",
+	"version": "1.0.0-alpha.1",
+	"classPath": "Sources",
+	"dependencies": {
+		"earcut": "git:https://github.com/ceramic-engine/earcut.git"
+	},
+	"contributors": ["bowlerhat"],
+	"releasenote": "Initial version"
+}
