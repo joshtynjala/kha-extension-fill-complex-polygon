@@ -2,6 +2,13 @@
 
 Includes a `fillComplexPolygon()` function that is similar to `fillPolygon()`, but it can also fill polygons that are not convex. Uses the [earcut](https://github.com/ceramic-engine/earcut.git) polygon triangulation library.
 
+
+## Comparison with `fillPolygon()`
+
+The following screenshot compares the more advanced triangulation of `fillComplexPolygon()` to the basic `fillPolygon()`. The supplied vertices represent a star with five points, which is a non-convex shape that `fillPolygon()` does not render correctly.
+
+![](./fill-complex-polygon.png)
+
 ## Installation
 
 Install from the Github repository using the following command:
