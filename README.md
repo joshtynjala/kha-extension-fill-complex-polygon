@@ -1,7 +1,6 @@
 # kha-extension-fill-complex-polygon
 
-Includes a `fillComplexPolygon()` function that is similar to `fillPolygon()`, but it can also fill polygons that are not convex. Uses the [earcut](https://github.com/ceramic-engine/earcut.git) polygon triangulation library.
-
+An extension for [Kha](http://kha.tech/) that includes a `fillComplexPolygon()` function for [`kha.graphics2.Graphics`](http://kha.tech/api/kha/graphics2/Graphics.html). This function is similar to [`fillPolygon()`](http://kha.tech/api/kha/graphics2/GraphicsExtension.html#fillPolygon), but it can also fill polygons that are not convex. Uses the [earcut](https://github.com/ceramic-engine/earcut.git) polygon triangulation library.
 
 ## Comparison with `fillPolygon()`
 
